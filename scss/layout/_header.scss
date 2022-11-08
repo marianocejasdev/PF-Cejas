@@ -1,0 +1,99 @@
+// HEADER
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+
+    // TOP
+
+    .top {
+
+        background-color: $black-color;
+
+        i {
+            color: $main-color;
+            font-size: .9rem;
+        }
+
+        a {
+
+            color: $white-color;
+            transition: all 0.3s ease;
+            font-size: .9rem;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+    }
+
+    // end of TOP
+
+    // NAVBAR
+
+    .navbar {
+        color: $white-color;
+        background-color: $black-color;
+        transition: all 0.3s ease;
+
+        .navbar-nav .nav-link.active {
+            color: $main-color;
+        }
+
+        .nav-link {
+            color: $white-color;
+
+            &:hover {
+                color: $main-color
+            }
+        }
+    }
+
+    .boton-wp {
+
+        a {
+            position: fixed;
+            width: 4rem;
+            height: 4rem;
+            bottom: 4rem;
+            right: 10rem;
+            background-color: $main-color;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+            z-index: 100;
+            transition: all 0.3s ease;
+
+            &:hover {
+                text-decoration: none;
+                transform: scale(1.5);
+            }
+        }
+
+        & i {
+            color: $black-color;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    .arrow i {
+        position: absolute;
+        bottom: 3rem;
+        color: $main-color;
+        transition: all 0.3s ease;
+        right: 50%;
+        font-size: 2rem;
+
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+            transform: scale(1.5);
+        }
+    }
+}
+
+// end of HEADER

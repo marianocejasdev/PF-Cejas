@@ -12,7 +12,7 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/53fa838947.js" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 
 <body>
@@ -95,8 +95,54 @@
         </nav>
         <!-- end of NAVBAR -->
 
-        <main>
-            <h1>CONTACTO</h1>
+        <main class="d-flex flex-grow-1 align-items-center justify-content-between contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="text-white text-uppercase fw-bold">Contacto.</h1>
+                        <ul class="list-unstyled m-0 info">
+                            <li class="d-block py-2"><a href="#" class="text-decoration-none"><i
+                                        class="fa-solid fa-location-dot me-2"></i>857
+                                    Abbott Unions Suite 645</a></li>
+                            <li class="d-block py-2"><a href="#" class="text-decoration-none"><i
+                                        class="fa-solid fa-envelope me-2"></i>info@hamburguesasdeverdad.com.ar </a>
+                            </li>
+                            <li class="d-block py-2"><a href="#" class="text-decoration-none"><i
+                                        class="fa-solid fa-phone me-2"></i>574-273-9916</a></li>
+                            <li class="d-block py-2"><a href="#" class="text-decoration-none"><i
+                                        class="fa-regular fa-clock me-2"></i>Lunes a
+                                    Sábados de 20:00 a 02:00</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form class="d-grid gap-3">
+
+                            <div class="form-group py-1">
+                                <input name="nombre" type="text" class="form-control" placeholder="Nombre" required />
+                            </div>
+
+                            <div class="form-group py-1">
+                                <input name="correo" type="email" class="form-control" placeholder="Correo" required />
+                            </div>
+
+                            <div class="form-group py-1">
+                                <textarea name="mensaje" class="form-control" placeholder="Mensaje" rows="8"
+                                    required></textarea>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-6 d-grid">
+                                    <button type="submit" class="btn btn-primary text-uppercase d-grid">
+                                        ENVIAR
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
         </main>
 
         <!-- FOOTER -->

@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+    header {
+        text-align: center;
+
+        .boton-wp a {
+            width: 4rem;
+            height: 4rem;
+            bottom: 2rem;
+            right: 1rem;
+        }
+
+        .arrow {
+            display: none;
+        }
+    }
+}
