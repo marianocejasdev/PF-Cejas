@@ -1,0 +1,14 @@
+// PALETA DE COLORES
+
+$black-color: #000000;
+$main-color: #F9C521;
+$white-color: #FFFFFF;
+$dark-color: #121212;
+
+// MODIFICANDO EL COLOR DE BOOTSTRAP
+
+$primary: $main-color;
+
+$theme-colors: (
+    "primary": $primary,
+);

@@ -1,6 +1,25 @@
-@import './utilities/globals';
+@import './utilities/variables';
+@import './utilities/mixins';
 @import './components/buttons';
+
+// Boostrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    color: $main-color;
+    background-color: $black-color;
+}
+
+@import './utilities/globals';
+
+
+
 @import './layout/header';
-@import './layout/hero';
 @import './layout/footer';
-@import './utilities/queries';
+
+@import './views/queries';
