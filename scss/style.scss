@@ -1,25 +1,27 @@
+/* UTILIDADES Y BOTONES */
+
 @import './utilities/variables';
 @import './utilities/mixins';
+@import './utilities/maps';
 @import './components/buttons';
 
-// Boostrap
+/* BOOTSTRAP */
+
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+/* SOBREESCRIBIENDO HOVER BTN BOOTSTRAP */
 
-.btn {
-    text-transform: uppercase;
-}
+@import './utilities/hover';
 
-.btn-primary:hover {
-    color: $main-color;
-    background-color: $black-color;
-}
+/* ESTILOS GLOBALES */
 
 @import './utilities/globals';
 
-
+/* LAYOUT */
 
 @import './layout/header';
 @import './layout/footer';
+
+/* QUERIES */
 
 @import './views/queries';

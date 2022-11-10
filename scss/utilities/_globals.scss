@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap');
-
-// ESTILOS GLOBALES
+/* ESTILOS GLOBALES */
 
 * {
     margin: 0;
@@ -11,13 +9,13 @@
     font-size: 16px;
 }
 
-// BODY
+/* BODY */
 
 body {
-    background-color: $dark-color;
+    background-color: map-get($colors, dark-color);
 }
 
-// IMAGENES
+/* IMAGENES */
 
 img {
     transition: all 0.3s ease;
@@ -28,14 +26,14 @@ img {
     }
 }
 
-// H1
+/* H1 */
 
 h1 {
-    @include text ($white-color, 900, 2rem);
+    @include text (map-get($colors, white-color), 900, 2rem);
     text-transform: uppercase;
 }
 
-// H2
+/* H2 */
 
 h2 {
     font-size: 1.5rem;
@@ -50,30 +48,30 @@ h2 {
         left: 0;
         right: 0;
         width: 30%;
-        background: $main-color;
+        background: map-get($colors, main-color);
         border-radius: 5px;
     }
 }
 
-// LINKS
+/* LINKS */
 
 a {
     text-decoration: none;
-    color: $white-color;
+    color: map-get($colors, white-color);
     transition: all 0.3s ease;
 
     &:hover {
-        color: $main-color;
+        color: map-get($colors, main-color);
     }
 }
 
-// ICONOS
+/* ICONOS */
 
 i {
-    color: $main-color;
+    color: map-get($colors, main-color);
 }
 
-// LISTAS
+/* LISTAS */
 
 ul {
     margin: 0;
@@ -81,7 +79,7 @@ ul {
     list-style: none;
 }
 
-// HERO
+/* HERO */
 
 .hero {
     p {
@@ -93,4 +91,4 @@ ul {
     }
 }
 
-// end of HERO
+/* end of HERO */

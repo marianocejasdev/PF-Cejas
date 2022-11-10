@@ -1,7 +1,7 @@
-// FOOTER
+/* FOOTER */
 
 footer {
-    background-color: $black-color;
+    background-color: map-get($colors, black-color);
 
     i {
         font-size: .9rem;

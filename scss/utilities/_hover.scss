@@ -1,0 +1,10 @@
+/* HOVER BTN BOOTSTRAP */
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    color: map-get($colors, main-color);
+    background-color: map-get($colors, black-color);
+}

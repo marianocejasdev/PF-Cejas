@@ -1,3 +1,5 @@
+/* MIXIN PARA LOS TEXTOS */
+
 @mixin text ($color, $fw, $fs) {
     color: $color;
     font-weight: $fw;

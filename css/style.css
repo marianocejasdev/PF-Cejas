@@ -1,26 +1,19 @@
 @charset "UTF-8";
+/* UTILIDADES Y BOTONES */ /* PALETA DE COLORES */
+/* MODIFICANDO EL COLOR DE BOOTSTRAP */
+/* MIXIN PARA LOS TEXTOS */ /* MAP DE COLORES */ /* MODIFICANDO BOTONES BOOSTRAP */
+/* BOOTSTRAP */
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap");
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --bs-main-color: #F9C521;
+  --bs-black-color: #000000;
+  --bs-white-color: #FFFFFF;
+  --bs-dark-color: #121212;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
@@ -11551,6 +11544,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* SOBREESCRIBIENDO HOVER BTN BOOTSTRAP */
+/* HOVER BTN BOOTSTRAP */
 .btn {
   text-transform: uppercase;
 }
@@ -11560,6 +11555,8 @@ textarea.form-control-lg {
   background-color: #000000;
 }
 
+/* ESTILOS GLOBALES */
+/* ESTILOS GLOBALES */
 * {
   margin: 0;
   padding: 0;
@@ -11570,10 +11567,12 @@ textarea.form-control-lg {
   font-size: 16px;
 }
 
+/* BODY */
 body {
   background-color: #121212;
 }
 
+/* IMAGENES */
 img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -11584,6 +11583,7 @@ img:hover {
   scale: 1.08;
 }
 
+/* H1 */
 h1, .h1 {
   color: #FFFFFF;
   font-weight: 900;
@@ -11591,6 +11591,7 @@ h1, .h1 {
   text-transform: uppercase;
 }
 
+/* H2 */
 h2, .h2 {
   font-size: 1.5rem;
   position: relative;
@@ -11608,6 +11609,7 @@ h2::after, .h2::after {
   border-radius: 5px;
 }
 
+/* LINKS */
 a {
   text-decoration: none;
   color: #FFFFFF;
@@ -11618,16 +11620,19 @@ a:hover {
   color: #F9C521;
 }
 
+/* ICONOS */
 i {
   color: #F9C521;
 }
 
+/* LISTAS */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* HERO */
 .hero p {
   font-size: 1rem;
 }
@@ -11635,6 +11640,9 @@ ul {
   font-weight: 900;
 }
 
+/* end of HERO */
+/* LAYOUT */
+/* HEADER */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11645,6 +11653,9 @@ header {
           flex-direction: column;
   min-height: 100vh;
   position: relative;
+  /* TOP */
+  /* end of TOP */
+  /* NAVBAR */
 }
 header .top {
   background-color: #000000;
@@ -11718,6 +11729,8 @@ header .arrow i:hover {
           transform: scale(1.5);
 }
 
+/* end of HEADER */
+/* FOOTER */
 footer {
   background-color: #000000;
 }
@@ -11728,6 +11741,8 @@ footer a {
   font-size: 0.9rem;
 }
 
+/* QUERIES */
+/* MEDIAUERIES HEADER */
 @media only screen and (max-width: 600px) {
   header {
     text-align: center;

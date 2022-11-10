@@ -1,4 +1,4 @@
-// HEADER
+/* HEADER */
 
 header {
     display: flex;
@@ -6,48 +6,48 @@ header {
     min-height: 100vh;
     position: relative;
 
-    // TOP
+    /* TOP */
 
     .top {
 
-        background-color: $black-color;
+        background-color: map-get($colors, black-color);
 
         i {
-            color: $main-color;
+            color: map-get($colors, main-color);
             font-size: .9rem;
         }
 
         a {
 
-            color: $white-color;
+            color: map-get($colors, white-color);
             transition: all 0.3s ease;
             font-size: .9rem;
 
             &:hover {
-                color: $main-color;
+                color: map-get($colors, main-color);
             }
         }
 
     }
 
-    // end of TOP
+    /* end of TOP */
 
-    // NAVBAR
+    /* NAVBAR */
 
     .navbar {
-        color: $white-color;
-        background-color: $black-color;
+        color: map-get($colors, white-color);
+        background-color: map-get($colors, black-color);
         transition: all 0.3s ease;
 
         .navbar-nav .nav-link.active {
-            color: $main-color;
+            color: map-get($colors, main-color);
         }
 
         .nav-link {
-            color: $white-color;
+            color: map-get($colors, white-color);
 
             &:hover {
-                color: $main-color
+                color: map-get($colors, main-color);
             }
         }
     }
@@ -60,7 +60,7 @@ header {
             height: 4rem;
             bottom: 4rem;
             right: 10rem;
-            background-color: $main-color;
+            background-color: map-get($colors, main-color);
             border-radius: 50px;
             text-align: center;
             box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
@@ -74,7 +74,7 @@ header {
         }
 
         & i {
-            color: $black-color;
+            color: map-get($colors, black-color);
             margin-top: 1rem;
             font-size: 2rem;
         }
@@ -83,17 +83,17 @@ header {
     .arrow i {
         position: absolute;
         bottom: 3rem;
-        color: $main-color;
+        color: map-get($colors, main-color);
         transition: all 0.3s ease;
         right: 50%;
         font-size: 2rem;
 
         &:hover {
-            color: $main-color;
+            color: map-get($colors, main-color);
             text-decoration: none;
             transform: scale(1.5);
         }
     }
 }
 
-// end of HEADER
+/* end of HEADER */
