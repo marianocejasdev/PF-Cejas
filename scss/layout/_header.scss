@@ -1,38 +1,42 @@
-/* HEADER */
+// HEADER
 
-header {
+.header {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     position: relative;
 
-    /* TOP */
+    // TOP
 
     .top {
 
         background-color: map-get($colors, black-color);
+        padding-block: .5rem;
+
+        .row {
+            justify-content: space-between;
+        }
 
         i {
-            color: map-get($colors, main-color);
             font-size: .9rem;
         }
 
         a {
-
-            color: map-get($colors, white-color);
+            @include text (map-get($colors, white-color), 400, .9rem);
             transition: all 0.3s ease;
-            font-size: .9rem;
 
             &:hover {
                 color: map-get($colors, main-color);
             }
         }
 
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
     }
 
-    /* end of TOP */
+    // end of TOP
 
-    /* NAVBAR */
+    // NAVBAR
 
     .navbar {
         color: map-get($colors, white-color);
@@ -50,7 +54,15 @@ header {
                 color: map-get($colors, main-color);
             }
         }
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
     }
+
+    // end of NAVBAR
+
+    // WHATSAPP
 
     .boton-wp {
 
@@ -58,8 +70,8 @@ header {
             position: fixed;
             width: 4rem;
             height: 4rem;
-            bottom: 4rem;
-            right: 10rem;
+            bottom: 2rem;
+            right: 2rem;
             background-color: map-get($colors, main-color);
             border-radius: 50px;
             text-align: center;
@@ -80,20 +92,31 @@ header {
         }
     }
 
-    .arrow i {
-        position: absolute;
-        bottom: 3rem;
-        color: map-get($colors, main-color);
-        transition: all 0.3s ease;
-        right: 50%;
-        font-size: 2rem;
+    // end of WHATSAPP
 
-        &:hover {
+    // ARROW
+
+    .arrow {
+
+        text-align: center;
+        padding-block: 4rem;
+
+
+        i {
             color: map-get($colors, main-color);
-            text-decoration: none;
-            transform: scale(1.5);
+            transition: all 0.3s ease;
+            font-size: 2rem;
+
+            &:hover {
+                color: map-get($colors, main-color);
+                text-decoration: none;
+                transform: scale(1.5);
+            }
         }
     }
+
+    // end of ARROW
+
 }
 
-/* end of HEADER */
+// end of HEADER

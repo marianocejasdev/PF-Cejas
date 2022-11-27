@@ -1,13 +1,11 @@
-/* FOOTER */
+// FOOTER
 
 footer {
     background-color: map-get($colors, black-color);
+    text-align: center;
+    padding-block: 1rem;
 
-    i {
-        font-size: .9rem;
-    }
-
-    a {
-        font-size: .9rem;
+    p {
+        color: map-get($colors, white-color);
     }
 }

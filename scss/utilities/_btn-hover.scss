@@ -1,0 +1,4 @@
+.btn-primary:hover {
+    color: map-get($colors, main-color);
+    background-color: map-get($colors, black-color);
+}

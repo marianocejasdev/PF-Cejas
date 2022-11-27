@@ -1,0 +1,42 @@
+// INDEX
+
+.hero {
+
+    & .row {
+        align-items: center;
+    }
+
+    h1 {
+        @include text (map-get($colors, white-color), 900, 4.5rem);
+        text-transform: uppercase;
+        padding-block-start: 2rem
+    }
+
+    p {
+        @include text (map-get($colors, white-color), 400, 1rem);
+        padding-block: 1rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+// COMO LLEGAR
+
+.como-llegar {
+    iframe {
+        border: 3px solid map-get($colors, main-color);
+        border-radius: 1rem;
+    }
+
+    a {
+        @include text (map-get($colors, white-color), 400, 1rem);
+
+        &:hover {
+            color: map-get($colors, main-color);
+        }
+    }
+}

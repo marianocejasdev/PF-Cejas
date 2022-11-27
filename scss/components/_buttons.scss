@@ -1,7 +1,11 @@
-/* MODIFICANDO BOTONES BOOSTRAP */
+// MODIFICANDO BOTONES BOOSTRAP
 
 $btn-padding-y: 1rem;
 $btn-padding-x: 1rem;
 $btn-border-width: 2px;
 $btn-font-weight: 600;
 $btn-border-radius: 5rem;
+
+.btn {
+    text-transform: uppercase;
+}

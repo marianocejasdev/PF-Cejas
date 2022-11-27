@@ -8,19 +8,21 @@
     <meta name="description"
         content="Entrá y conocé las mejores hamburguesas hechas a mano | info@hamburguesasdeverdad.com.ar" />
     <meta name="keywords"
-        content="hamburguesas, hamburguesa de carne, hamburguesa de pollo, hamburgueseria, papas fritas, bebidas" />
+        content="hamburguesas de verdad, hamburguesas hechas a mano, hamburguesas, hamburguesa de carne, hamburguesa de pollo, hamburgueseria, papas fritas, bebidas" />
     <meta name="author" content="Mariano Cejas" />
-    <meta name="copyright" content="HDV | Hamburguesas de Verdad" />
+    <meta name="copyright" content="HDV - Hamburguesas de Verdad." />
     <!-- Titulo -->
-    <title>HDV | Hamburguesas de Verdad</title>
+    <title>Inicio - Hamburguesas de Verdad.</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/53fa838947.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/53fa838947.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -28,45 +30,34 @@
 <body>
 
     <!-- HEADER -->
-
-    <header>
+    <header class="header">
 
         <!-- TOP -->
-        <div class="top py-1 d-none d-lg-inline-block">
+        <div class="top">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row">
                     <div class="col-auto">
-                        <ul>
-                            <li class="d-inline"><a href="#"><i class="fa-solid fa-location-dot mx-2"></i>857
-                                    Abbott Unions Suite 645</a></li>
-                            <li class="d-inline"><a href="#"><i
-                                        class="fa-solid fa-envelope mx-2"></i>info@hamburguesasdeverdad.com.ar </a>
-                            </li>
-                            <li class="d-inline"><a href="#"><i class="fa-solid fa-phone mx-2"></i>574-273-9916</a></li>
-                            <li class="d-inline"><a href="#"><i class="fa-regular fa-clock mx-2"></i>Lunes a
-                                    Sábados de 20:00 a 02:00</a></li>
-                        </ul>
+                        <a href="#"><i class="fa-solid fa-location-dot mx-2"></i>857 Abbott Unions Suite 645</a>
+                        <a href="mailto:info@hamburguesasdeverdad.com.ar"><i
+                                class="fa-solid fa-envelope mx-2"></i>info@hamburguesasdeverdad.com.ar</a>
+                        <a href="tel:574-273-9916"><i class="fa-solid fa-phone mx-2"></i>574-273-9916</a>
+                        <a href="#"><i class="fa-regular fa-clock mx-2"></i>Lunes a Sábados de 20:00 a 02:00</a>
                     </div>
                     <div class="col-auto">
-                        <ul>
-                            <li class="d-inline"><a href="#"><i class="fa-brands fa-facebook-f mx-2"></i></a>
-                            </li>
-                            <li class="d-inline"><a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
-                            </li>
-                            <li class="d-inline"><a href="#"><i class="fa-brands fa-whatsapp mx-2"></i></a>
-                            </li>
-                        </ul>
+                        <a href="#"><i class="fa-brands fa-facebook-f mx-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp mx-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end of TOP -->
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/burguer-logo.png" height="50" alt="Logo HDV">
+                    <img src="./img/burger-nav.svg" height="50" alt="Logo HDV">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -74,7 +65,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
                         <li class="nav-item">
                             <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">Inicio</a>
                         </li>
@@ -92,40 +83,45 @@
                             <a class="nav-link text-uppercase fw-bold" href="pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-outline-primary py-2 px-3">
+                    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+                        target="_blank" class="btn btn-outline-primary py-2 mb-2">
                         <span class="fa-solid fa-phone mx-2"></span>574-273-9916
                     </a>
                 </div>
             </div>
         </nav>
-        <!-- end of NAVBAR -->
+        <!-- end of NAV -->
 
         <!-- HERO -->
-        <div class="hero d-flex flex-grow-1 justify-content-between align-items-center text-center">
+        <div class="hero">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 d-grid gap-3">
-                        <h1 class=" display-3 pe-lg-5">Hamburguesas de Verdad.</h1>
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed sem a
-                            libero condimentum
-                            fermentum.
-                            Vivamus molestie risus a eros venenatis, venenatis porta risus condimentum.</p>
+                <div class="row">
+
+                    <div class="col-12 col-lg-6">
+                        <h1>Hamburguesas de Verdad.</h1>
+                        <p>Carne de primera hecha a la parrilla, acompañada de los mejores y más frescos ingredientes
+                            combinándolos de forma sorprendente y donde todo se hace al momento.
+                        </p>
                         <div class="row">
-                            <div class="d-none d-md-grid col-md-6 mb-3 mb-md-0">
-                                <button class="btn btn-outline-primary" type="button">Menu</button>
+                            <div class="d-none d-lg-grid col-12 col-md-6 mb-3 mb-md-0">
+                                <a class="btn btn-outline-primary" href="pages/menu.html">Menu</a>
                             </div>
-                            <div class="d-none d-md-grid col-md-6">
-                                <button class="btn btn-primary" type="button">Hace tu Pedido</button>
+                            <div class="d-none d-lg-grid col-12 col-md-6">
+                                <a class="btn btn-primary" href="pages/menu.html">Hace tu Pedido</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="./img/burger.svg" alt="Hamburguesa Grand Triple Bacon" class="img-fluid">
+
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="./img/burger.svg" class="img-fluid" alt="Hamburguesa - Grand Triple Bacon"
+                            data-aos="zoom-in" data-aos-delay="300">
                     </div>
-                    <div class="d-grid gap-3 col-10 mx-auto d-md-none">
-                        <button class="btn btn-outline-primary" type="button">Button</button>
-                        <button class="btn btn-primary" type="button">Button</button>
+
+                    <div class="d-grid gap-3 col-10 mx-auto d-lg-none">
+                        <a class="btn btn-outline-primary" href="pages/menu.html">Menu</a>
+                        <a class="btn btn-primary" href="pages/menu.html">Hace tu Pedido</a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -150,18 +146,20 @@
     <!-- end of HEADER -->
 
     <!-- MAIN -->
-    <main id="main">
+    <main>
 
         <!-- PRODUCTOS DESTACADOS -->
-        <div class="productos">
+        <section class="productos-destacados">
             <div class="container">
-                <div class="row align-items-center">
-                    <!-- PRODUCTOS DESTACADOS -->
+                <div class="row">
+
                     <h2 class="text-white text-uppercase text-center fw-bold my-5">Productos Destacados</h2>
 
-                    <!-- PRODUCTO DESTACADO #1-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/burger.svg" class="img-fluid" alt="Hamburguesa Grand Triple Bacon">
+                    <!-- PRODUCTO #1 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/burger-1.svg" class=" img-fluid"
+                            alt="Hamburguesa - Grand Triple Bacon">
                         <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
@@ -169,206 +167,221 @@
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #2-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/burger.svg" class="img-fluid" alt="Hamburguesa Grand Triple Bacon">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #2 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/burger-2.svg" class=" img-fluid"
+                            alt="Hamburguesa - Grand Crispy Onion">
+                        <h3 class="text-white text-center h5">Grand Crispy Onion</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #3-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/burger.svg" class="img-fluid" alt="Hamburguesa Grand Triple Bacon">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #3 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/burger-3.svg" class="img-fluid" alt="Hamburguesa - Crispy Chicken">
+                        <h3 class="text-white text-center h5">Crispy Chicken</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #4-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/burger.svg" class="img-fluid" alt="Hamburguesa Grand Triple Bacon">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #4 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/burger-4.svg" class="img-fluid"
+                            alt="Hamburguesa - Guacamole Cheese Burger">
+                        <h3 class="text-white text-center h5">Guacamole Cheese Burger</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
                     </div>
 
-                    <!-- ACOMPAÑALAS COMO QUIERAS -->
-                    <h2 class="text-white text-uppercase text-center fw-bold my-5">ACOMPAÑALAS COMO QUIERAS</h2>
-
-                    <!-- PRODUCTO DESTACADO #1-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/papas-fritas.svg" class="img-fluid" alt="Papas Fritas">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #5 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="300"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/papas-fritas.svg" class="img-fluid" alt="Papas Fritas Clásicas">
+                        <h3 class="text-white text-center h5">Papas Fritas Clásicas</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$590,00</p>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #2-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/papas-fritas.svg" class="img-fluid" alt="Papas Fritas">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #6 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/papas-fritas.svg" class="img-fluid" alt="Papas Fritas con Cheddar">
+                        <h3 class="text-white text-center h5">Papas Fritas con Cheddar</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$590,00</p>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #3-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/papas-fritas.svg" class="img-fluid" alt="Papas Fritas">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #7 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/papas-fritas.svg" class="img-fluid" alt="Papas Fritas con Bacon">
+                        <h3 class="text-white text-center h5">Papas Fritas con Bacon</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$590,00</p>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #4-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/papas-fritas.svg" class="img-fluid" alt="Papas Fritas">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #8 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/products/papas-fritas.svg" class="img-fluid" alt="Papas Fritas con Verdeo">
+                        <h3 class="text-white text-center h5">Papas Fritas con Verdeo</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$590,00</p>
                     </div>
 
-                    <!-- BEBIDAS -->
-                    <h2 class="text-white text-uppercase text-center fw-bold my-5">BEBIDAS</h2>
-
-                    <!-- PRODUCTO DESTACADO #1-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/bebida.svg" class="img-fluid" alt="Bebida">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #9 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/bebidas/coca-cola.svg" class="img-fluid" alt="Bebida Coca-Cola">
+                        <h3 class="text-white text-center h5">Coca-Cola</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$390,00</p>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #2-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/bebida.svg" class="img-fluid" alt="Bebida">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #10 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/bebidas/sprite.svg" class="img-fluid" alt="Bebida Sprite">
+                        <h3 class="text-white text-center h5">Sprite</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$390,00</p>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #3-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/bebida.svg" class="img-fluid" alt="Bebida">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #11 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/bebidas/fanta.svg" class="img-fluid" alt="Bebida Fanta">
+                        <h3 class="text-white text-center h5">Fanta</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$390,00</p>
                     </div>
 
-                    <!-- PRODUCTO DESTACADO #4-->
-                    <div class="col-md-6 col-lg-3 text-center my-3">
-                        <img src="./img/bebida.svg" class="img-fluid" alt="Bebida">
-                        <h3 class="text-white text-center h5">Grand Triple Bacon</h3>
+                    <!-- PRODUCTO #12 -->
+                    <div class="col-6 col-md-3 text-center producto py-3" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-plus" data-bs-toggle="tooltip" data-bs-title="Agregar al Pedido"></i>
+                        <img src="./img/bebidas/pepsi.svg" class="img-fluid" alt="Bebida Pepsi">
+                        <h3 class="text-white text-center h5">Pepsi</h3>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
                         <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <i class="fa-solid fa-star py-1"></i>
-                        <p class="text-white fw-bold py-1">$890,00</p>
-                        <button class="btn btn-primary py-2" type="button">COMPRAR</button>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <i class="fa-regular fa-star py-1"></i>
+                        <p class="text-white fw-bold py-1">$390,00</p>
                     </div>
+
+                    <div class="d-grid col-10 col-md-4 mx-auto pt-5">
+                        <a href="/pages/menu.html" class="btn btn-primary">Ver Menu</a>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
         <!-- end of PRODUCTOS DESTACADOS -->
+
+        <!-- COMO LLEGAR -->
+        <section class="como-llegar py-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-white text-uppercase text-center fw-bold my-5">Como LLegar</h2>
+
+                    <div class="col-12 col-md-10 offset-md-1">
+
+                        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                href="https://www.maps.ie/distance-area-calculator.html"></a></iframe>
+
+                        <div class="col-auto text-center py-3">
+                            <a href="#" class="d-block d-md-inline-block"><i
+                                    class="fa-solid fa-location-dot mx-2"></i>857 Abbott
+                                Unions Suite 645</a>
+                            <a href="mailto:info@hamburguesasdeverdad.com.ar" class="d-block d-md-inline-block"><i
+                                    class="fa-solid fa-envelope mx-2"></i>info@hamburguesasdeverdad.com.ar</a>
+                            <a href="tel:574-273-9916" class="d-block d-md-inline-block"><i
+                                    class="fa-solid fa-phone mx-2"></i>574-273-9916</a>
+                            <a href="#" class="d-block d-md-inline-block"><i class="fa-regular fa-clock mx-2"></i>Lunes
+                                a Sábados de 20:00 a 02:00</a>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <!-- end of COMO LLEGAR -->
+
     </main>
     <!-- end of MAIN -->
 
     <!-- FOOTER -->
-    <footer class="py-1">
+    <footer class="footer">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-auto">
-                    <ul>
-                        <li class="d-inline"><a href="#">TM © 2022 HDV - Hamburguesas de
-                                Verdad. Todos los derechos reservados.</a></li>
-                    </ul>
-                </div>
-                <div class="col-auto">
-                    <ul>
-                        <li class="d-inline"><a href="#"><i class="fa-brands fa-facebook-f mx-2"></i></a>
-                        </li>
-                        <li class="d-inline"><a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
-                        </li>
-                        <li class="d-inline"><a href="#"><i class="fa-brands fa-whatsapp mx-2"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <p>TM © 2022 HDV - Hamburguesas de Verdad. Todos los derechos reservados.</p>
+            <a href="#"><i class="fa-brands fa-facebook-f mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp mx-2"></i></a>
         </div>
     </footer>
     <!-- end of FOOTER -->
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ScrollReveal JS -->
-    <script src="https://unpkg.com/scrollreveal">
+    <!-- TOOLTIP -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <script src="./node_modules/aos/dist/aos.js"></script>
 
     <script>
-        ScrollReveal().reveal('.img-fluid');
-
-        delay: 600
-        duration: 600
-        easing: 'cubic-bezier(0.5, 0, 0, 1)'
-        origin: 'bottom'
+        AOS.init();
     </script>
+
 </body>
 
 </html>

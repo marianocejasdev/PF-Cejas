@@ -1,27 +1,17 @@
-/* UTILIDADES Y BOTONES */
-
 @import './utilities/variables';
 @import './utilities/mixins';
-@import './utilities/maps';
 @import './components/buttons';
-
-/* BOOTSTRAP */
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-/* SOBREESCRIBIENDO HOVER BTN BOOTSTRAP */
-
-@import './utilities/hover';
-
-/* ESTILOS GLOBALES */
-
-@import './utilities/globals';
-
-/* LAYOUT */
+@import './base/reset';
+@import './utilities/btn-hover';
 
 @import './layout/header';
 @import './layout/footer';
+@import './components/products';
 
-/* QUERIES */
-
-@import './views/queries';
+@import './views/index';
+@import './views/nosotros';
+@import './views/galeria';
+@import './views/contacto';

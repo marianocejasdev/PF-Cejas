@@ -1,0 +1,38 @@
+// GALERÍA
+
+.galeria {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        flex-grow: 1;
+
+        .row {
+            align-items: center;
+        }
+
+        img {
+            filter: drop-shadow(0px 0px 8px rgba(255, 122, 0, 0.8));
+            padding-block: 1rem;
+        }
+    }
+
+
+
+    .info {
+
+        text-align: center;
+        padding-block: 1rem;
+
+        a {
+            @include text (map-get($colors, white-color), 400, 1rem);
+            display: block;
+
+            &:hover {
+                color: map-get($colors, main-color);
+            }
+        }
+    }
+}

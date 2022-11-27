@@ -1,0 +1,60 @@
+// CONTACTO
+
+.contacto {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .row {
+            align-items: flex-start;
+
+            .info-contacto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            a {
+                @include text (map-get($colors, white-color), 400, 1rem);
+                display: block;
+                padding-block: .5rem;
+
+                &:hover {
+                    color: map-get($colors, main-color);
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: .9rem;
+                    padding-block: .1rem;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 1.2rem;
+                }
+            }
+
+
+        }
+    }
+
+    input,
+    textarea {
+        transition: all 0.3s ease;
+
+        border: 2px solid map-get($colors, main-color);
+        background-color: transparent;
+    }
+
+}
