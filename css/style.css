@@ -11747,6 +11747,9 @@ footer a {
   header {
     text-align: center;
   }
+  header h1, header .h1 {
+    font-size: 2rem;
+  }
   header .boton-wp a {
     width: 4rem;
     height: 4rem;
