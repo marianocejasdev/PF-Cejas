@@ -11720,7 +11720,7 @@ footer p {
 }
 
 .banner-1 {
-  background: url(../../img/banners/banner-1.png);
+  background-image: url("../../img/banners/banner-1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
