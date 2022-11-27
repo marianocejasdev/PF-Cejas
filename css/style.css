@@ -11714,6 +11714,116 @@ footer p {
   border: 2px solid #F9C521;
 }
 
+.banners .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.banner-1 {
+  background: url(../../img/banners/banner-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 380px;
+  height: 260px;
+  border: 1px solid #F9C521;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (max-width: 991.98px) {
+  .banner-1 {
+    width: 350px;
+  }
+}
+.banner-1 h3, .banner-1 .h3 {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner-2 {
+  background: url(../../img/banners/banner-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 380px;
+  height: 260px;
+  border: 2px solid #F9C521;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (max-width: 991.98px) {
+  .banner-2 {
+    width: 350px;
+  }
+}
+.banner-2 h3, .banner-2 .h3 {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner-2 h3 span, .banner-2 .h3 span {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.banner-2 h3 span::before, .banner-2 .h3 span::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.banner-3 {
+  background: url(../../img/banners/banner-3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 380px;
+  height: 260px;
+  border: 1px solid #F9C521;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (max-width: 991.98px) {
+  .banner-3 {
+    width: 350px;
+  }
+}
+.banner-3 h3, .banner-3 .h3 {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .hero .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
