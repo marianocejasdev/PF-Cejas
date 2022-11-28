@@ -11681,15 +11681,6 @@ img:hover {
           transform: scale(1.5);
 }
 
-footer {
-  background-color: #000000;
-  text-align: center;
-  padding-block: 1rem;
-}
-footer p {
-  color: #FFFFFF;
-}
-
 .producto {
   position: relative;
 }
@@ -11720,13 +11711,13 @@ footer p {
 }
 
 .banner-1 {
-  background-image: url("../../img/banners/banner-1.png");
+  background-image: url("../../img/banners/banner-1.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 380px;
   height: 260px;
-  border: 1px solid #F9C521;
+  border: 2px solid #F9C521;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11752,7 +11743,7 @@ footer p {
 }
 
 .banner-2 {
-  background: url(../../img/banners/banner-2.png);
+  background-image: url("../../img/banners/banner-2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11793,7 +11784,7 @@ footer p {
 }
 
 .banner-3 {
-  background: url(../../img/banners/banner-3.png);
+  background-image: url("../../img/banners/banner-3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12010,4 +12001,13 @@ footer p {
   transition: all 0.3s ease;
   border: 2px solid #F9C521;
   background-color: transparent;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding-block: 1rem;
+}
+footer p {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

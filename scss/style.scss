@@ -1,19 +1,33 @@
+// VARIABLES
 @import './utilities/variables';
+
+// MIXINS
 @import './utilities/mixins';
+
+// BUTTONS
 @import './components/buttons';
 
+// BOOTSTRAP
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+// RESET
 @import './base/reset';
+
+// BTN-HOVER BOOTSTRAP
 @import './utilities/btn-hover';
 
+// HEADER
 @import './layout/header';
-@import './layout/footer';
 
+//COMPONENTS
 @import './components/products';
 @import './components/banners';
 
+// VIEWS
 @import './views/index';
 @import './views/nosotros';
 @import './views/galeria';
 @import './views/contacto';
+
+// FOOTER
+@import './layout/footer';

@@ -7,13 +7,13 @@
 }
 
 .banner-1 {
-    background-image: url('../../img/banners/banner-1.png');
+    background-image: url('../../img/banners/banner-1.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 380px;
     height: 260px;
-    border: 1px solid map-get($colors, main-color);
+    border: 2px solid map-get($colors, main-color);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .banner-2 {
-    background: url(../../img/banners/banner-2.png);
+    background-image: url('../../img/banners/banner-2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@
 }
 
 .banner-3 {
-    background: url(../../img/banners/banner-3.png);
+    background-image: url('../../img/banners/banner-3.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
